@@ -32,12 +32,12 @@ export default function Sidebar() {
         </div>
         <div className="sidebar--container--body">
           <div className="sidebar--container--body--category">
-            {Categories.map((item) => (
+            {Categories.map((item, index) => (
               <>
                 {theme === "dark" ? (
                   <div
                     onClick={handleCat}
-                    key={item?.id}
+                    key={index}
                     id={item?.title}
                     title={item?.cat}
                     className={`sidebar--container--body--category--item dark-border ${
@@ -54,7 +54,7 @@ export default function Sidebar() {
                 ) : (
                   <div
                     onClick={handleCat}
-                    key={item?.id}
+                    key={index}
                     id={item?.title}
                     title={item?.cat}
                     className={

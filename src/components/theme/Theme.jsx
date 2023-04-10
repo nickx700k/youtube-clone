@@ -52,7 +52,15 @@ const Theme = () => {
     <div className="theme">
       <div className="theme--container">
         <div className="theme--container--mode">
-          <h2 className="theme--container--mode--h2">Theme Mode</h2>
+          <h2
+            className={
+              theme === "light"
+                ? `theme--container--mode--h2`
+                : `theme--container--mode--h2 white-color`
+            }
+          >
+            Theme Mode
+          </h2>
           <div className="theme--container--mode--items">
             {themeModeCallection.map((item, index) => (
               <input
@@ -66,7 +74,15 @@ const Theme = () => {
           </div>
         </div>
         <div className="theme--container--color">
-          <h2 className="theme--container--color--h2">Theme Color</h2>
+          <h2
+            className={
+              theme === "light"
+                ? `theme--container--color--h2`
+                : `theme--container--color--h2 white-color`
+            }
+          >
+            Theme Color
+          </h2>
           <div className="theme--container--color--items">
             {themeColorCallection.map((item, index) => (
               <input

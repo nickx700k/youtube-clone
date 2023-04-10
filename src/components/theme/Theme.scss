@@ -13,16 +13,18 @@
   &--container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
+    justify-content: space-between;
+    padding: 0rem 1rem;
     &--mode {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 20px;
       &--h2 {
-        font-size: 0.9rem;
-        color: var(--black2-text);
+        font-size: 1rem;
+        color: var(--black-text);
+        font-weight: 700;
+        transition: var(--transition);
       }
       &--items {
         display: flex;
@@ -45,8 +47,10 @@
       justify-content: center;
       gap: 20px;
       &--h2 {
-        font-size: 0.9rem;
-        color: var(--black2-text);
+        font-size: 1rem;
+        color: var(--black-text);
+        font-weight: 700;
+        transition: var(--transition);
       }
       &--items {
         display: flex;
@@ -111,7 +115,7 @@
 }
 
 .dark-border {
-  border: 2px solid var(--white2-text);
+  border: 1px solid var(--white2-text);
 }
 
 .light {

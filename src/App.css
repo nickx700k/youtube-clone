@@ -28,3 +28,7 @@
   transform: translate(-50%, -50%);
   font-size: 3rem;
 }
+
+.white-color {
+  color: var(--white2-text) !important;
+}

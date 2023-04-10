@@ -51,7 +51,7 @@ const Home = () => {
               type="text"
               placeholder="Please Search..."
             />
-            <i class="bx bx-search home--container--head--search--icon"></i>
+            <i className="bx bx-search home--container--head--search--icon"></i>
           </form>
         </div>
         <div className="home--container">
