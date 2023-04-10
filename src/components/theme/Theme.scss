@@ -1,0 +1,103 @@
+.theme {
+  width: 600px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow2-white);
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  z-index: 99;
+  transition: var(--transition);
+  &--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    &--mode {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      &--h2 {
+        font-size: 0.9rem;
+        color: var(--black2-text);
+      }
+      &--items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        &--button {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          outline: none;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+    &--color {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      &--h2 {
+        font-size: 0.9rem;
+        color: var(--black2-text);
+      }
+      &--items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        &--button {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          outline: none;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.blue {
+  background-color: var(--blue-color);
+}
+
+.red {
+  background-color: var(--red-color);
+}
+.green {
+  background-color: var(--green-color);
+}
+
+.orange {
+  background-color: var(--orange-color);
+}
+.pink {
+  background-color: var(--pink-color);
+}
+
+.light-border {
+  border: 2px solid var(--black2-text);
+}
+
+.dark-border {
+  border: 2px solid var(--white2-text);
+}
+
+.light {
+  background-color: var(--white-color);
+  color: var(--black2-color);
+}
+
+.dark {
+  background-color: var(--black-color);
+  color: var(--white-text);
+}

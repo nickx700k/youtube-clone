@@ -1,0 +1,26 @@
+.search {
+  width: 100%;
+  transition: var(--transition);
+  &--container {
+    padding: 3rem;
+    &--head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 0;
+      &--h2 {
+        font-size: 2rem;
+      }
+      &--icon {
+        font-size: 3rem;
+        cursor: pointer;
+      }
+    }
+
+    &--videos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+  }
+}

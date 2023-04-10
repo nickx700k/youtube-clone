@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "title": "New",
+    "cat": "new",
+    "icon": "bx bx-news"
+  },
+  {
+    "id": "2",
+    "title": "JS Mastery",
+    "cat": "js%mastry",
+    "icon": "bx bx-code-alt"
+  },
+  {
+    "id": "3",
+    "title": "ReactJS",
+    "cat": "reactjs",
+    "icon": "bx bx-code-alt"
+  },
+  {
+    "id": "4",
+    "title": "Music",
+    "cat": "music",
+    "icon": "bx bx-music"
+  },
+  {
+    "id": "5",
+    "title": "Education",
+    "cat": "education",
+    "icon": "bx bx-book-content"
+  },
+  {
+    "id": "6",
+    "title": "Movie",
+    "cat": "movie",
+    "icon": "bx bx-movie"
+  },
+  {
+    "id": "7",
+    "title": "Gaming",
+    "cat": "gaming",
+    "icon": "bx bx-game"
+  },
+  {
+    "id": "8",
+    "title": "Sport",
+    "cat": "sport",
+    "icon": "bx bx-cricket-ball"
+  }
+]

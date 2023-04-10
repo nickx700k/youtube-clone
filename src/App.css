@@ -1,0 +1,23 @@
+:root {
+  --transition: all 0.3s ease-out;
+  --white-text: #f7f7f7;
+  --white2-text: #ececec;
+  --black-text: #242424;
+  --black2-text: #989898;
+  --black-color: #161616;
+  --blue-color: #0051ff;
+  --red-color: #ff0000;
+  --orange-color: #ff7f00;
+
+  --green-color: #0cb313;
+  --pink-color: #e106f6;
+  --box-shadow-white: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  --box-shadow2-white: rgba(99, 99, 99, 0.2) 0px 0px 10px 0px;
+  --box-shadow-black: rgba(233, 233, 233, 0.432) 0px 2px 8px 0px;
+  --box-shadow2-black: rgba(175, 175, 175, 0.438) 20px 20px 20px 5px;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
