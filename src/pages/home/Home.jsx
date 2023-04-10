@@ -5,7 +5,7 @@ import { UtilityContext } from "../../components/utility/Provider";
 import { fetchApi } from "../../api/fetchData";
 import { useNavigate } from "react-router-dom";
 const Home = () => {
-  const { cat, cats, theme } = useContext(UtilityContext);
+  const { cat, cats, theme, color } = useContext(UtilityContext);
 
   const [videos, setVideos] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -32,8 +32,14 @@ const Home = () => {
     <div className={`home ${theme}`}>
       <div className="home--container">
         <div className="home--container--head">
-          <div className="home--container--head--title page-title">
-            {cat} <span>Videos</span>
+          <div className="home--container--head--title">
+            <span
+              style={{ color: color }}
+              className="home--container--head--title--span"
+            >
+              {cat}
+            </span>{" "}
+            <span className="page-title">Videos</span>
           </div>
           <form
             onSubmit={handleSearch}

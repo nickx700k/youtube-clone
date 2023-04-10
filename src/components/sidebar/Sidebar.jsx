@@ -51,7 +51,15 @@ export default function Sidebar() {
                     key={item?.id}
                     id={item?.title}
                     title={item?.cat}
-                    className="sidebar--container--body--category--item"
+                    className={
+                      item?.cat === active
+                        ? `sidebar--container--body--category--item white-color ${
+                            item?.cat === active && color
+                          }`
+                        : `sidebar--container--body--category--item ${
+                            item?.cat === active && color
+                          }`
+                    }
                   >
                     <span className="sidebar--container--body--category--item--title">
                       {item?.title}
