@@ -44,7 +44,9 @@ export default function VideoCard({ video }) {
                   alt=" incorrect photo"
                 />
                 <div className="video--div--div">
-                  <span className="video--div--div--span">Watch</span>
+                  <span className={`video--div--div--span ${color}`}>
+                    Watch
+                  </span>
                 </div>
               </a>
 
@@ -78,7 +80,9 @@ export default function VideoCard({ video }) {
                   alt=" incorrect photo"
                 />
                 <div className="video--div--div">
-                  <span className="video--div--div--span">Watch</span>
+                  <span className={`video--div--div--span ${color}`}>
+                    Watch
+                  </span>
                 </div>
               </a>
 

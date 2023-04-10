@@ -1,5 +1,4 @@
 .sidebar {
-  box-shadow: rgba(33, 35, 38, 0.1) 15px 0px 10px -10px;
   width: 200px;
   color: var(--black-text);
   transition: var(--transition);
@@ -59,4 +58,14 @@
 
 .white-color {
   color: var(--white-text);
+}
+
+.light-box-shadow {
+  box-shadow: rgba(33, 35, 38, 0.1) 15px 0px 10px -10px;
+}
+
+.dark-box-shadow {
+  box-shadow: rgba(117, 117, 117, 0.1) 10px 0px 15px -10px;
+  display: block;
+  z-index: 99;
 }

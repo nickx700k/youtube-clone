@@ -34,8 +34,7 @@ const Home = () => {
         <div className="home--container--head">
           <div className="home--container--head--title">
             <span
-              style={{ color: color }}
-              className="home--container--head--title--span"
+              className={`home--container--head--title--span ${color}Color`}
             >
               {cat}
             </span>{" "}

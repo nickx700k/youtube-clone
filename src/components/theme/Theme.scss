@@ -70,18 +70,40 @@
   background-color: var(--blue-color);
 }
 
+.blueColor {
+  color: var(--blue-color);
+}
+
 .red {
   background-color: var(--red-color);
 }
+
+.redColor {
+  color: var(--red-color);
+}
+
 .green {
   background-color: var(--green-color);
+}
+
+.greenColor {
+  color: var(--green-color);
 }
 
 .orange {
   background-color: var(--orange-color);
 }
+
+.orangeColor {
+  color: var(--orange-color);
+}
+
 .pink {
   background-color: var(--pink-color);
+}
+
+.pinkColor {
+  color: var(--pink-color);
 }
 
 .light-border {

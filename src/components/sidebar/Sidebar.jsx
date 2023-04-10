@@ -15,7 +15,13 @@ export default function Sidebar() {
   };
 
   return (
-    <div className={`sidebar ${theme}`}>
+    <div
+      className={
+        theme === "dark"
+          ? `sidebar dark-box-shadow ${theme}`
+          : `sidebar light-box-shadow ${theme}`
+      }
+    >
       <div className="sidebar--container">
         <div className="sidebar--container--head">
           <img

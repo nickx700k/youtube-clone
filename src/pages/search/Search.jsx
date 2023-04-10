@@ -6,7 +6,7 @@ import VideoCard from "../../components/video-card/VideoCard";
 import { UtilityContext } from "../../components/utility/Provider";
 
 const Search = () => {
-  const { theme } = useContext(UtilityContext);
+  const { theme, color } = useContext(UtilityContext);
 
   const { searchTerm } = useParams();
   const [videos, setVideos] = useState([]);
@@ -32,7 +32,8 @@ const Search = () => {
       <div className="search--container">
         <div className="search--container--head">
           <h2 className="search--container--head--h2">
-            Display Result for {searchTerm}
+            Display Result for{" "}
+            <span className={`${color}Color`}>{searchTerm}</span>
           </h2>
           <i
             class="bx bx-arrow-back search--container--head--icon"
