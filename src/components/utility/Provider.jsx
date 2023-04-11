@@ -9,8 +9,6 @@ export const UtilityContext = createContext({
   handleThemeMode: (mode) => {},
   color: "red",
   handleThemeColor: (color) => {},
-  active: "0",
-  handleActive: (index) => {},
 });
 
 export default function Provider({ children }) {
