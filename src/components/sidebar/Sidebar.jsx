@@ -25,7 +25,7 @@ export default function Sidebar() {
       <div className="sidebar--container">
         <div className="sidebar--container--head">
           <img
-            src={`${url}edb5-nickx700k.jpg`}
+            src="https://up.20script.ir/file/edb5-nickx700k.jpg"
             alt="profile image"
             className="sidebar--container--head--profile"
           />
