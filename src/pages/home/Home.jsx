@@ -4,6 +4,7 @@ import VideoCard from "../../components/video-card/VideoCard";
 import { UtilityContext } from "../../components/utility/Provider";
 import { fetchApi } from "../../api/fetchData";
 import { useNavigate } from "react-router-dom";
+
 const Home = () => {
   const { cat, cats, theme, color } = useContext(UtilityContext);
 
@@ -13,13 +14,9 @@ const Home = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetchApi(`search?q=${cats}&part=snippet%2Cid`).then((data) =>
-      setVideos(data.items)
-    );
-
-    setTimeout(() => {
-      setLoading(false);
-    }, 7000);
+    fetchApi(`search?q=${cats}&part=snippet%2Cid`)
+      .then((data) => setVideos(data.items))
+      .then(() => setLoading(false));
   }, [cats]);
 
   const navigate = useNavigate();
@@ -57,7 +54,10 @@ const Home = () => {
         <div className="home--container">
           <div className="home--container--videos">
             {loading ? (
-              <h2 className="loading">LOADING...</h2>
+              <div className={`loading ${color}`}>
+                <h2 className="loading-spinner"></h2>
+                <h2 className="loading-h2">Loading...</h2>
+              </div>
             ) : (
               videos?.map((video, index) => (
                 <VideoCard key={index} video={video} />

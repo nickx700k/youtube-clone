@@ -15,12 +15,9 @@ const Search = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetchApi(`search?part=snippet%2Cid&q=${searchTerm}`).then((data) =>
-      setVideos(data.items)
-    );
-    setTimeout(() => {
-      setLoading(false);
-    }, 7000);
+    fetchApi(`search?part=snippet%2Cid&q=${searchTerm}`)
+      .then((data) => setVideos(data.items))
+      .then(() => setLoading(false));
   }, [searchTerm]);
 
   const handleExit = () => {
@@ -43,7 +40,10 @@ const Search = () => {
 
         <div className="search--container--videos">
           {loading ? (
-            <h2 className="loading">Loading...</h2>
+            <div className={`loading ${color}`}>
+              <h2 className="loading-spinner"></h2>
+              <h2 className="loading-h2">Loading...</h2>
+            </div>
           ) : (
             videos?.map((video) => <VideoCard video={video} />)
           )}
